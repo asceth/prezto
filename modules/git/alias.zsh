@@ -272,3 +272,10 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gwx='git rm -r'
   alias gwX='git rm -rf'
 fi
+
+# custom
+# unalias gs
+alias gs='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
+# unalias gss
+alias gss='git stash'
+

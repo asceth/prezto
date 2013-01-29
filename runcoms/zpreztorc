@@ -38,6 +38,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'pacman' \
   'ruby' \
+  'tmux' \
   'syntax-highlighting' \
   'prompt'
 
@@ -226,3 +227,4 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 # zstyle ':prezto:module:utility' safe-ops 'yes'
+

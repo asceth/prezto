@@ -9,3 +9,30 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+#
+# Browser
+#
+
+if [[ "$OSTYPE" == darwin* ]]; then
+  export BROWSER='open'
+fi
+
+#
+# Editors
+#
+
+export EDITOR='vim'
+export VISUAL='vim'
+export PAGER='less'
+
+#
+# Language
+#
+
+if [[ -z "$LANG" ]]; then
+  eval "$(locale)"
+fi
+
+
+

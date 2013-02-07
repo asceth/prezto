@@ -75,7 +75,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
-zstyle ':prezto:module:git:status:ignore' submodules 'all'
+zstyle ':prezto:module:git:status:ignore' submodules 'none'
 
 #
 # GNU Utility
@@ -110,6 +110,7 @@ zstyle ':prezto:module:git:status:ignore' submodules 'all'
 
 # Set the Pacman frontend.
 zstyle ':prezto:module:pacman' frontend 'yaourt'
+zstyle ':prezto:module:pacman' yaourt 'color'
 
 #
 # Prompt

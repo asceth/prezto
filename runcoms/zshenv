@@ -33,6 +33,3 @@ export PAGER='less'
 if [[ -z "$LANG" ]]; then
   eval "$(locale)"
 fi
-
-
-

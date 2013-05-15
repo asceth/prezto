@@ -17,6 +17,7 @@ fi
 # Auto Start
 #
 
+
 if ([[ "$TERM_PROGRAM" = 'iTerm.app' ]] && \
   zstyle -t ':prezto:module:tmux:iterm' integrate \
 ); then

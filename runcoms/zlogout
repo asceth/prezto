@@ -17,3 +17,4 @@ SAYINGS=(
 echo $SAYINGS[$(($RANDOM % ${#SAYINGS} + 1))]
 
 } >&2
+

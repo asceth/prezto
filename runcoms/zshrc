@@ -12,8 +12,8 @@ fi
 
 # Customize to your needs...
 if command -v keychain; then
-  /usr/bin/keychain -Q -q --nogui ~/.ssh/id_rsa
-  /usr/bin/keychain -Q -q --nogui ~/.ssh/id_clemson_rsa
+  /usr/bin/keychain --nogui ~/.ssh/id_rsa
+  /usr/bin/keychain --nogui ~/.ssh/id_clemson_rsa
 
   [[ -f $HOME/.keychain/$HOST-sh ]] && source $HOME/.keychain/$HOST-sh
 fi

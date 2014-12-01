@@ -12,8 +12,12 @@ fi
 
 # Customize to your needs...
 if command -v keychain; then
-  keychain --nogui ~/.ssh/id_rsa
-  keychain --nogui ~/.ssh/id_clemson_rsa
+  /usr/bin/keychain --nogui ~/.ssh/id_rsa
+  /usr/bin/keychain --nogui ~/.ssh/id_clemson_rsa
 
   [[ -f $HOME/.keychain/$HOST-sh ]] && source $HOME/.keychain/$HOST-sh
 fi
+
+# go setup
+export GOPATH=$HOME/.go
+export PATH=$PATH:$HOME/.go/bin

@@ -27,7 +27,7 @@ fi
 if [[ -z "$TMUX" && -z "$EMACS" && -z "$VIM" && -z "$INSIDE_EMACS" && -z "$VSCODE_PID" ]] && ( \
   ( [[ -n "$SSH_TTY" ]] && zstyle -t ':prezto:module:tmux:auto-start' remote ) ||
   ( [[ -z "$SSH_TTY" ]] && zstyle -t ':prezto:module:tmux:auto-start' local ) \
-); then
+) && [[ "$TMUX_AUTOSTART" != "no" ]]; then
   tmux start-server
 
   # Create a 'prezto' session if no session has been defined in tmux.conf.
@@ -48,4 +48,3 @@ fi
 
 alias tmuxa="tmux $_tmux_iterm_integration new-session -A"
 alias tmuxl='tmux list-sessions'
-alias tmux='tmux -2'

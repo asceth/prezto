@@ -41,7 +41,8 @@ zstyle ':prezto:load' pmodule \
   'ruby' \
   'tmux' \
   'syntax-highlighting' \
-  'prompt'
+  'prompt' \
+  'php'
 
 #
 # Autosuggestions

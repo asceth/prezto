@@ -1,25 +1,13 @@
 #
-# Configures Emacs dependency management.
+# Configures emacs aliases
 #
-# Authors: Sebastian Wiesner <lunaryorn@gmail.com>
+# Authors: John Long
 #
 
-# Return if requirements are not found.
-if [[ ! -d "$HOME/.cask" ]]; then
-  return 1
-fi
-
-# Prepend Cask bin directory.
-path=($HOME/.cask/bin $path)
-
-# Load Carton completion
-source "$HOME/.cask/etc/cask_completion.zsh" 2> /dev/null
 
 #
 # Aliases
 #
-
-alias cai='cask install'
-alias cau='cask update'
-alias caI='cask init'
-alias cae='cask exec'
+alias emr='systemctl --user restart emacs'
+alias e="emacsclient --server-file=default -t"
+alias E="SUDO_EDITOR=\"emacsclient --server-file=default -t\" sudoedit"

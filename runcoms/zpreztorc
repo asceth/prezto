@@ -43,6 +43,7 @@ zstyle ':prezto:load' pmodule \
   'tmux' \
   'syntax-highlighting' \
   'prompt' \
+  'docker' \
   'php'
 
 #

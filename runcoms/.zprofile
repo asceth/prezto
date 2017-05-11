@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='emacsclient --server-file=default -t'
-export VISUAL='emacsclient --server-file=default -t'
+export EDITOR='vim'
+export VISUAL='vim'
 export PAGER='less'
 
 #

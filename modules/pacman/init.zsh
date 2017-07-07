@@ -24,7 +24,7 @@ zstyle -s ':prezto:module:pacman' frontend '_pacman_frontend'
 if (( $+commands[$_pacman_frontend] )); then
   alias pacman="$_pacman_frontend"
 else
-  _pacman_frontend='pacman'
+  _pacman_frontend='pacman --color auto'
   _pacman_sudo='sudo '
 fi
 

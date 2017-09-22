@@ -274,6 +274,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
 fi
 
 # custom
+alias gcm='git commit -S --message'
 alias gs='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
 alias gss='git stash'
 alias gd='git diff --no-ext-diff'

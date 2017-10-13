@@ -12,12 +12,12 @@ fi
 
 # Customize to your needs...
 if command -v keychain; then
-  /usr/bin/keychain --nogui ~/.ssh/id_rsa
-  /usr/bin/keychain --nogui ~/.ssh/id_rsa_code
-  /usr/bin/keychain --nogui ~/.ssh/id_rsa_rfa
-  /usr/bin/keychain --nogui ~/.ssh/id_rsa_clemson
+  # import host specific keys
+  [[ -f $HOME/.config/keychain/$HOST.sh ]] && source $HOME/.config/keychain/$HOST.sh
 
+  # import keychain-generated files
   [[ -f $HOME/.keychain/$HOST-sh ]] && source $HOME/.keychain/$HOST-sh
+  [[ -f $HOME/.keychain/$HOST-sh ]] && source $HOME/.keychain/$HOST-sh-gpg
 fi
 
 fpath+=~/.zfunc

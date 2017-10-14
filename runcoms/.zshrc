@@ -17,7 +17,7 @@ if command -v keychain; then
 
   # import keychain-generated files
   [[ -f $HOME/.keychain/$HOST-sh ]] && source $HOME/.keychain/$HOST-sh
-  [[ -f $HOME/.keychain/$HOST-sh ]] && source $HOME/.keychain/$HOST-sh-gpg
+  [[ -f $HOME/.keychain/$HOST-sh-gpg ]] && source $HOME/.keychain/$HOST-sh-gpg
 fi
 
 fpath+=~/.zfunc

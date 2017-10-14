@@ -20,6 +20,9 @@ if command -v keychain; then
   [[ -f $HOME/.keychain/$HOST-sh ]] && source $HOME/.keychain/$HOST-sh
 fi
 
+fpath+=~/.zfunc
+
 # go setup
 export GOPATH=$HOME/.go
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 export PATH=$PATH:$HOME/.go/bin:$HOME/bin

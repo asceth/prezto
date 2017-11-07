@@ -10,3 +10,7 @@
 if [[ -s "$HOME/.asdf/asdf.sh" ]]; then
   source "$HOME/.asdf/asdf.sh"
 fi
+
+if (( $+commands[vg] )); then
+  eval "$(vg eval --shell zsh)"
+fi

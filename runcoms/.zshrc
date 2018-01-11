@@ -24,7 +24,9 @@ fpath+=~/.zfunc
 
 # go setup
 export GOPATH=$HOME/.go
-export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+if (( $+commands[rustc] )); then
+  export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+fi
 export PATH=$PATH:$HOME/.go/bin:$HOME/bin
 
 export NVM_DIR="$HOME/.nvm"

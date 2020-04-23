@@ -22,6 +22,9 @@ fi
 
 fpath+=~/.zfunc
 
+# do not abort when globbing finds no files
+setopt NULL_GLOB
+
 # go setup
 export GOPATH=$HOME/.go
 if (( $+commands[rustc] )); then
@@ -29,6 +32,3 @@ if (( $+commands[rustc] )); then
 fi
 export PATH=$PATH:$HOME/.go/bin:$HOME/bin
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

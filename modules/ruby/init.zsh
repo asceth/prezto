@@ -59,7 +59,7 @@ alias rb='ruby'
 
 alias rbb='bundle'
 alias rbbe='bundle exec'
-alias rbbi='bundle install --path vendor/bundle'
+alias rbbi='bundle install'
 alias rbbl='bundle list'
 alias rbbo='bundle open'
 alias rbbp='bundle package'

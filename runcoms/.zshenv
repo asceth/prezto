@@ -35,3 +35,8 @@ if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
 fi
 
+
+#
+# QT5 Icon fix (requires qt5ct)
+#
+export QT_QPA_PLATFORMTHEME=qt5ct

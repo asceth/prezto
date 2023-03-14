@@ -27,8 +27,13 @@ setopt NULL_GLOB
 
 # go setup
 export GOPATH=$HOME/.go
+export PATH=$PATH:$HOME/.go/bin
+
+# rust setup
 if (( $+commands[rustc] )); then
   export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+  export PATH=$PATH:$HOME/.cargo/bin
 fi
-export PATH=$PATH:$HOME/.go/bin:$HOME/bin
 
+# user bin setup
+export PATH=$PATH:$HOME/bin
